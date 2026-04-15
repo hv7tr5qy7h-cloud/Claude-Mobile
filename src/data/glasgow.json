@@ -1,0 +1,196 @@
+{
+  "trip": {
+    "destination": "Glasgow, Scotland",
+    "travel_month": "August 2026",
+    "group": "4 people (2 couples), age ~27",
+    "vibe": "eat, drink, explore — on-the-fly European travel style",
+    "base_neighborhood": "West End (G12 postcode — Hillhead/Hyndland)",
+    "currency": "GBP (£)"
+  },
+
+  "neighborhoods": [
+    {
+      "name": "West End",
+      "description": "Home base. Cobbled streets, fairy lights, independent bars and restaurants, University of Glasgow Gothic campus, Botanic Gardens. Local crowd, zero tourist trap energy.",
+      "key_streets": ["Ashton Lane", "Byres Road", "Great Western Road"],
+      "vibe_tags": ["local", "walkable", "pubs", "cafes", "students", "architecture"]
+    },
+    {
+      "name": "Merchant City",
+      "description": "East of city centre. Mural trail, good bars and restaurants, more polished. 20-25 min walk or £8 cab from West End.",
+      "vibe_tags": ["street art", "bars", "restaurants", "walkable from centre"]
+    },
+    {
+      "name": "Cathedral Quarter / East End",
+      "description": "Glasgow Cathedral and Necropolis. Half-day trip. Combine with Merchant City and WEST Brewery at Glasgow Green.",
+      "vibe_tags": ["historic", "free", "views", "architecture"]
+    }
+  ],
+
+  "activities": {
+    "non_traditional": [
+      {
+        "name": "The Barras Market",
+        "type": "Market / East End pub crawl",
+        "description": "Open-air and indoor market established in 1921. Antiques, records, street food. Best on weekends. Surrounding pubs are no-frills local.",
+        "cost": "Free entry",
+        "hours": "Sat–Sun 10am–4pm",
+        "location": "244 Gallowgate, G1 5DX",
+        "lat": 55.854,
+        "lng": -4.234
+      },
+      {
+        "name": "Merchant City Mural Trail",
+        "type": "Street art / walking",
+        "description": "28 large-scale murals by local artists across Merchant City. Billy Connolly, St Mungo, giant spacemen. Download free map or pick up at Visitor Centre on Ingram Street.",
+        "cost": "Free",
+        "hours": "Anytime",
+        "location": "Merchant City, G1",
+        "lat": 55.858,
+        "lng": -4.249
+      },
+      {
+        "name": "WEST Brewery",
+        "type": "Craft brewery / food",
+        "description": "German-inspired beers (St Mungo, West 4) in a stunning Victorian building at Glasgow Green. Currywurst, schnitzel, burgers. Local crowd, great atmosphere.",
+        "cost": "Food + drinks ~£20–35pp",
+        "hours": "Mon–Thu 11am–11pm, Fri–Sat 11am–12am, Sun 11am–11pm",
+        "website": "westbeer.com",
+        "location": "15 Binnie Place, Glasgow Green, G40 1AW",
+        "lat": 55.8509,
+        "lng": -4.2339
+      },
+      {
+        "name": "Ashton Lane",
+        "type": "Bar street",
+        "description": "Hidden cobbled lane with fairy lights in the West End. Home to Innis & Gunn, The Grosvenor bar, Ubiquitous Chip. Best at night. The quintessential West End spot.",
+        "cost": "Drinks ~£5–7/pint",
+        "hours": "All day, best after 6pm",
+        "location": "Ashton Lane, G12",
+        "lat": 55.8743,
+        "lng": -4.2932
+      },
+      {
+        "name": "Sharmanka Kinetic Theatre",
+        "type": "Unique performance / art",
+        "description": "Hundreds of carved figures on steampunk machinery performing to haunting music and lights. Founded in St Petersburg, based in Glasgow for decades. Nothing else like it. ~1hr show. Book ahead.",
+        "cost": "~£10–15pp",
+        "location": "Trongate 103, G1 5HD",
+        "lat": 55.857,
+        "lng": -4.245
+      }
+    ],
+    "traditional_tourist": [
+      {
+        "name": "Kelvingrove Art Gallery & Museum",
+        "type": "Museum / Art gallery",
+        "description": "Free. Iconic red sandstone building. Van Gogh, Dalí, Glasgow School. Spitfire hanging from the ceiling. Free pipe organ recital daily at 1pm. Arrive early on weekends.",
+        "cost": "Free (donations welcome)",
+        "hours": "Mon–Thu & Sat 10am–5pm, Fri & Sun 11am–5pm",
+        "website": "glasgowlife.org.uk",
+        "location": "Argyle St, G3 8AG",
+        "lat": 55.8686,
+        "lng": -4.2906
+      },
+      {
+        "name": "University of Glasgow Campus",
+        "type": "Architecture / wandering",
+        "description": "Fourth-oldest university in the UK (founded 1451). Gothic spires, cloisters, vaulted arches. Frequently compared to Hogwarts. Free to wander. 5-min walk from Ashton Lane.",
+        "cost": "Free",
+        "hours": "Open campus",
+        "location": "University Ave, G12 8QQ",
+        "lat": 55.8724,
+        "lng": -4.29
+      },
+      {
+        "name": "Glasgow Cathedral & The Necropolis",
+        "type": "Historic / views",
+        "description": "Medieval Gothic cathedral (free entry). Walk up the hill behind it to the Victorian Necropolis — 3,500 monuments, stunning views over the city. The Batman (2022) filmed here.",
+        "cost": "Free",
+        "hours": "Cathedral: Mon–Sat 9:30am–4:15pm, Sun 1–4:15pm. Necropolis: Daily 7am–4:30pm",
+        "location": "Castle St, G4 0QZ",
+        "lat": 55.863,
+        "lng": -4.235
+      },
+      {
+        "name": "Byres Road Pub Crawl",
+        "type": "Nightlife / local bars",
+        "description": "Glasgow's best local pub strip in the West End. Cheap pints, student and local crowd, no tourist markup. Walk out of your hotel and you're on it.",
+        "cost": "Drinks ~£4–6/pint",
+        "location": "Byres Road, G12",
+        "lat": 55.8741,
+        "lng": -4.295
+      }
+    ]
+  },
+
+  "accommodation": {
+    "recommended_area": "West End — G12 postcode (Hillhead/Hyndland). Stay within 5 min walk of Ashton Lane/Byres Road.",
+    "note_for_two_couples": "Look for 2-bedroom options with separate bedrooms/bathrooms for privacy. Serviced apartments or Airbnb strongly recommended over standard hotel rooms.",
+    "options": [
+      {
+        "name": "Dreamhouse Apartments West End",
+        "type": "Serviced apartment",
+        "stars": 4,
+        "description": "2-bedroom apartments in Victorian townhouses. Two double bedrooms, master en-suite, separate kitchen, large lounge/dining. Also has 3-bedroom duplex. Free parking. 4-star rated, 9.2 on Booking.com.",
+        "nightly_rate_gbp": 225,
+        "rate_note": "~£225/night for 2-bed (approx £112/couple)",
+        "best_for": "Two couples wanting apartment-style privacy",
+        "location": "14–15 Lynedoch Crescent, G3 6EF",
+        "website": "dreamhouseapartments.com",
+        "lat": 55.868,
+        "lng": -4.274,
+        "booking_tip": "Book direct or via Booking.com. Full payment required if booked <4 weeks out. No stag/hen parties."
+      },
+      {
+        "name": "One Devonshire Gardens (Hotel du Vin)",
+        "type": "Boutique hotel",
+        "stars": 5,
+        "description": "Iconic 5-star West End boutique hotel in a Victorian terrace. 49 individually designed rooms/suites with roll-top baths, Egyptian linen, monsoon showers. Restaurant, whisky room, cigar shack. The splurge option.",
+        "nightly_rate_gbp": 175,
+        "rate_note": "~£150–250+/night per room depending on dates. Two rooms needed = £300–500/night total.",
+        "best_for": "Splurge — special occasion feel",
+        "location": "1 Devonshire Gardens, G12 0UX",
+        "website": "hotelduvin.com/locations/glasgow",
+        "lat": 55.8748,
+        "lng": -4.2978,
+        "booking_tip": "Book well in advance for August. Two standard rooms side-by-side is an option."
+      },
+      {
+        "name": "Glasgow Grosvenor Hotel",
+        "type": "Hotel",
+        "stars": 4,
+        "description": "4-star hotel right on Great Western Road, 2-min walk from Botanic Gardens and Ashton Lane. On-site steakhouse (Bo'Vine) and gin bar (beGIN with 100+ gins). 97 rooms. Best mid-range hotel option in the West End.",
+        "nightly_rate_gbp": 142,
+        "rate_note": "~£120–160/night per room. Two rooms = ~£240–320/night total.",
+        "best_for": "Mid-range hotel with great location — two separate rooms",
+        "location": "1–9 Grosvenor Terrace, Great Western Rd, G12 0TA",
+        "website": "gghotel.co.uk",
+        "lat": 55.8746,
+        "lng": -4.294,
+        "booking_tip": "Book direct on gghotel.co.uk for best rate. Hillhead subway 5-min walk."
+      },
+      {
+        "name": "Airbnb — West End 2-bed flat",
+        "type": "Airbnb / vacation rental",
+        "stars": null,
+        "description": "Best option for privacy and local character. Traditional sandstone tenement flats in G12 are gorgeous inside. Search Airbnb for 2 bedrooms, 4 guests, G12 postcode (Hillhead/Hyndland). Expect full kitchen, private bedrooms, living room.",
+        "nightly_rate_gbp": 180,
+        "rate_note": "~£150–250/night total for entire flat (split 2 ways = ~£75–125/couple)",
+        "best_for": "Best value for privacy + local feel",
+        "location": "G12 postcode — Hillhead / Hyndland",
+        "website": "airbnb.com",
+        "lat": 55.872,
+        "lng": -4.292,
+        "booking_tip": "Filter: 2 bedrooms, 4 guests, G12. Book ASAP — August fills up fast due to Edinburgh Fringe overflow."
+      }
+    ]
+  },
+
+  "logistics": {
+    "getting_there": "Fly into Edinburgh (EDI) — bus or train to Glasgow takes ~50 min, ~£15. Or Glasgow International (GLA) — 20 min taxi/bus to West End.",
+    "getting_around": "West End is very walkable. Cathedral/East End is 20–25 min walk or £8 cab. Glasgow has a simple subway (the 'Clockwork Orange') — Hillhead station is in the West End.",
+    "august_notes": "Peak season. Edinburgh Fringe runs all of August — overflow tourists push Glasgow hotel demand up. Book accommodation ASAP.",
+    "weather": "Expect 15–20°C (59–68°F), partly cloudy with some rain. Pack a light jacket. August is actually Glasgow's best month weather-wise."
+  }
+}
