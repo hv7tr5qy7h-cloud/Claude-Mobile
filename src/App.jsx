@@ -4,12 +4,14 @@ import HotelsTab from './components/HotelsTab'
 import ActivitiesTab from './components/ActivitiesTab'
 import MapView from './components/MapView'
 import LogisticsTab from './components/LogisticsTab'
+import FlightsTab from './components/FlightsTab'
 
 const TABS = [
-  { id: 'hotels',     label: 'Hotels',     emoji: '🏨' },
-  { id: 'activities', label: 'Activities',  emoji: '🎯' },
-  { id: 'map',        label: 'Map',         emoji: '🗺️' },
-  { id: 'info',       label: 'Info',        emoji: '📋' },
+  { id: 'hotels',     label: 'Hotels',   emoji: '🏨' },
+  { id: 'activities', label: 'Explore',  emoji: '🎯' },
+  { id: 'flights',    label: 'Flights',  emoji: '✈️' },
+  { id: 'map',        label: 'Map',      emoji: '🗺️' },
+  { id: 'info',       label: 'Info',     emoji: '📋' },
 ]
 
 export default function App() {
@@ -53,6 +55,11 @@ export default function App() {
         {activeTab === 'map' && (
           <div className="h-full">
             <MapView data={data} />
+          </div>
+        )}
+        {activeTab === 'flights' && (
+          <div className="h-full overflow-y-auto">
+            <FlightsTab />
           </div>
         )}
         {activeTab === 'info' && (

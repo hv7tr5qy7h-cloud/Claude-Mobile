@@ -1,5 +1,16 @@
 import { useState } from 'react'
 
+// Condense long cost strings to a short label for the card face
+function shortCost(cost) {
+  if (!cost) return ''
+  const lower = cost.toLowerCase()
+  if (lower.startsWith('free') && !cost.includes('£')) return 'Free'
+  const match = cost.match(/~?£[\d,]+[–\-]?[\d,]*/)
+  if (match) return match[0]
+  if (lower.includes('free')) return 'Free'
+  return cost.substring(0, 14)
+}
+
 function ActivityCard({ activity, color }) {
   const [open, setOpen] = useState(false)
 
@@ -12,29 +23,31 @@ function ActivityCard({ activity, color }) {
   return (
     <div className="bg-slate-800 rounded-2xl border border-slate-700/60 overflow-hidden">
       <button className="w-full text-left p-4" onClick={() => setOpen(o => !o)}>
-        <div className="flex items-start justify-between gap-3">
-          <div className="flex-1 min-w-0">
-            <p className="font-semibold text-white text-sm leading-snug">{activity.name}</p>
-            <div className="flex items-center gap-2 mt-1.5 flex-wrap">
-              <span className={`text-[11px] font-medium px-2 py-0.5 rounded-full ${badge}`}>
-                {activity.type}
-              </span>
-              {activity.neighborhood && (
-                <span className="text-[11px] text-slate-500 font-medium">{activity.neighborhood}</span>
-              )}
-            </div>
-          </div>
-          <span className="shrink-0 text-[11px] font-semibold bg-slate-700 text-slate-300 px-2 py-1 rounded-lg whitespace-nowrap">
-            {activity.cost}
+        {/* Name — full width, max 2 lines */}
+        <p className="font-semibold text-white text-sm leading-snug line-clamp-2 mb-2">
+          {activity.name}
+        </p>
+
+        {/* Type badge + cost — both capped width */}
+        <div className="flex items-center justify-between gap-2">
+          <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full truncate max-w-[55%] ${badge}`}>
+            {activity.type}
+          </span>
+          <span className="text-[11px] font-semibold text-slate-400 shrink-0">
+            {shortCost(activity.cost)}
           </span>
         </div>
-        <p className="text-xs text-slate-400 mt-2 leading-relaxed line-clamp-2">
+
+        {/* Description preview */}
+        <p className="text-xs text-slate-500 mt-2 leading-relaxed line-clamp-2">
           {activity.description}
         </p>
       </button>
 
+      {/* Expanded detail */}
       {open && (
-        <div className={`border-t border-slate-700/60 border-l-4 ${border} ${bg} px-4 py-3 space-y-2`}>
+        <div className={`border-t border-slate-700/60 border-l-4 ${border} ${bg} px-4 py-3 space-y-2.5`}>
+          <p className="text-xs font-semibold text-slate-300">{activity.cost}</p>
           <p className="text-sm text-slate-300 leading-relaxed">{activity.description}</p>
           {activity.hours && (
             <p className="text-xs text-slate-400 flex gap-1.5 items-start">
@@ -47,6 +60,11 @@ function ActivityCard({ activity, color }) {
           {activity.website && (
             <p className="text-xs text-slate-500 flex gap-1.5 items-start">
               <span className="shrink-0">🌐</span><span>{activity.website}</span>
+            </p>
+          )}
+          {activity.note && (
+            <p className="text-xs text-amber-400 flex gap-1.5 items-start">
+              <span className="shrink-0">⚠️</span><span>{activity.note}</span>
             </p>
           )}
         </div>
@@ -68,7 +86,6 @@ export default function ActivitiesTab({ data }) {
 
   return (
     <div className="pb-8">
-      {/* Sticky filter bar */}
       <div className="sticky top-0 bg-slate-900 border-b border-slate-700/60 z-10 px-4 py-3">
         <div className="flex gap-2 overflow-x-auto no-scrollbar">
           {FILTERS.map(f => (

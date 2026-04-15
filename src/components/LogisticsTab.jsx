@@ -50,9 +50,7 @@ export default function LogisticsTab({ data }) {
 
       {/* Practical info */}
       <div className="space-y-3">
-        <InfoCard icon="✈️" title="Getting There"  content={logistics.getting_there} />
         <InfoCard icon="🚇" title="Getting Around" content={logistics.getting_around} />
-        <InfoCard icon="📅" title="August Notes"   content={logistics.august_notes} warn />
         <InfoCard icon="🌦️" title="Weather"        content={logistics.weather} />
       </div>
 
