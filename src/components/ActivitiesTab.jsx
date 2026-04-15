@@ -58,9 +58,14 @@ function ActivityCard({ activity, color }) {
             <span className="shrink-0">📍</span><span>{activity.location}</span>
           </p>
           {activity.website && (
-            <p className="text-xs text-slate-500 flex gap-1.5 items-start">
-              <span className="shrink-0">🌐</span><span>{activity.website}</span>
-            </p>
+            <a
+              href={`https://${activity.website}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-blue-400 flex gap-1.5 items-start"
+            >
+              <span className="shrink-0">🌐</span><span className="underline">{activity.website}</span>
+            </a>
           )}
           {activity.note && (
             <p className="text-xs text-amber-400 flex gap-1.5 items-start">

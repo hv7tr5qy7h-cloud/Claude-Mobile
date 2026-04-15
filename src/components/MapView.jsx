@@ -5,6 +5,7 @@ const COLORS = {
   hotel:           '#3b82f6',  // blue-500
   non_traditional: '#22c55e',  // green-500
   tourist:         '#f97316',  // orange-500
+  golf:            '#a855f7',  // purple-500
 }
 
 const CATS = [
@@ -43,7 +44,7 @@ function PlaceCard({ pin, active, onClick, cardRef }) {
         <span className={`text-[10px] font-semibold uppercase tracking-wide truncate ${
           active ? 'text-gray-500' : 'text-slate-500'
         }`}>
-          {pin.category === 'hotel' ? 'Hotel' : pin.category === 'non_traditional' ? 'Off path' : 'Tourist'}
+          {pin.category === 'hotel' ? 'Hotel' : pin.category === 'non_traditional' ? 'Off path' : pin.category === 'golf' ? 'Golf' : 'Tourist'}
         </span>
       </div>
       <p className={`text-xs font-bold leading-snug line-clamp-2 ${active ? 'text-gray-900' : 'text-white'}`}>
@@ -57,10 +58,11 @@ function PlaceCard({ pin, active, onClick, cardRef }) {
 }
 
 export default function MapView({ data }) {
-  const [cat, setCat]       = useState('all')
-  const [active, setActive] = useState(null)
-  const cardRefs            = useRef({})
-  const stripRef            = useRef(null)
+  const [cat, setCat]           = useState('all')
+  const [showGolf, setShowGolf] = useState(false)
+  const [active, setActive]     = useState(null)
+  const cardRefs                = useRef({})
+  const stripRef                = useRef(null)
 
   const allPins = [
     ...[
@@ -70,21 +72,32 @@ export default function MapView({ data }) {
       name: h.name, type: h.type,
       subtitle: `£${h.nightly_rate_gbp}/night`,
       location: h.location, lat: h.lat, lng: h.lng,
+      website: h.website,
       category: 'hotel',
     })),
     ...data.activities.non_traditional.map(a => ({
       name: a.name, type: a.type, subtitle: a.cost,
       location: a.location, lat: a.lat, lng: a.lng,
+      website: a.website,
       category: 'non_traditional',
     })),
     ...data.activities.traditional_tourist.map(a => ({
       name: a.name, type: a.type, subtitle: a.cost,
       location: a.location, lat: a.lat, lng: a.lng,
+      website: a.website,
       category: 'tourist',
     })),
   ]
 
-  const pins = cat === 'all' ? allPins : allPins.filter(p => p.category === cat)
+  const golfPins = (data.golf_courses || []).map(g => ({
+    name: g.name, type: g.type, subtitle: g.green_fee_note,
+    location: g.location, lat: g.lat, lng: g.lng,
+    website: g.website,
+    category: 'golf',
+  }))
+
+  const basePins = cat === 'all' ? allPins : allPins.filter(p => p.category === cat)
+  const pins = showGolf ? [...basePins, ...golfPins] : basePins
 
   const handlePinClick = pin => {
     setActive(pin)
@@ -120,6 +133,19 @@ export default function MapView({ data }) {
               {c.label}
             </button>
           ))}
+          {/* Golf toggle — independent overlay */}
+          <button
+            onClick={() => { setShowGolf(g => !g); setActive(null) }}
+            className={`flex-shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs
+                        font-semibold transition-all backdrop-blur-md shadow-lg ${
+              showGolf
+                ? 'bg-purple-500 text-white'
+                : 'bg-black/60 text-white border border-white/15'
+            }`}
+          >
+            <span className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: COLORS.golf }} />
+            ⛳ Golf
+          </button>
         </div>
       </div>
 
@@ -167,6 +193,16 @@ export default function MapView({ data }) {
                   <p className="text-white font-bold text-sm">{active.name}</p>
                   <p className="text-slate-500 text-xs mt-0.5">{active.type}</p>
                   <p className="text-slate-400 text-xs mt-0.5">{active.location}</p>
+                  {active.website && (
+                    <a
+                      href={`https://${active.website}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 text-xs mt-1 inline-block underline"
+                    >
+                      {active.website}
+                    </a>
+                  )}
                 </div>
                 <div className="text-right shrink-0">
                   <p className="text-white font-bold text-sm">{active.subtitle}</p>

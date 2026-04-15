@@ -23,20 +23,20 @@ export default function App() {
       style={{ height: '100dvh', maxWidth: '480px', margin: '0 auto' }}
     >
       {/* ── Header ─────────────────────────────────────────── */}
-      <header className="bg-slate-900 border-b border-slate-700/60 px-4 pt-4 pb-3 shrink-0">
-        <div className="flex items-center gap-3">
-          <span className="text-2xl">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
-          <div>
-            <h1 className="text-base font-bold text-white leading-tight">
-              Glasgow, Scotland
-            </h1>
-            <p className="text-xs text-slate-500">
-              {data.trip.travel_month} · {data.trip.group}
-            </p>
+      <header className="bg-slate-900 border-b border-slate-700/60 px-4 py-3 shrink-0">
+        <div className="flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2.5 min-w-0">
+            <span className="text-lg shrink-0">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+            <div className="min-w-0">
+              <h1 className="text-[15px] font-bold text-white tracking-tight leading-none">
+                Glasgow, Scotland
+              </h1>
+              <p className="text-[11px] text-slate-500 mt-0.5 truncate">
+                Aug 2026 · 4 people · 2 couples
+              </p>
+            </div>
           </div>
-          <span className="ml-auto text-xs bg-blue-500/20 text-blue-400 font-semibold px-2 py-1 rounded-full border border-blue-500/30">
-            {data.trip.currency}
-          </span>
+          <span className="text-slate-500 text-sm font-semibold shrink-0">£</span>
         </div>
       </header>
 

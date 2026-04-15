@@ -329,6 +329,75 @@
     ]
   },
 
+  "golf_courses": [
+    {
+      "name": "Haggs Castle Golf Club",
+      "type": "Parkland — Private (visitor tee times available)",
+      "description": "Established 1910. Tree-lined parkland course set within former castle grounds in the south side, 4 miles from the West End. Hosted the Glasgow Classic and Carroll's Irish Open in the 1970s–80s. Excellent condition year-round. Visitor rounds available on weekdays — book ahead.",
+      "green_fee_note": "~£40–55pp weekday visitor round",
+      "distance": "4 miles south of city centre",
+      "website": "haggsgolf.co.uk",
+      "location": "70 Dumbreck Road, G41 4SN",
+      "lat": 55.8376,
+      "lng": -4.286
+    },
+    {
+      "name": "Pollok Golf Club",
+      "type": "Parkland — Private (visitor rounds available)",
+      "description": "Founded 1892. Highly regarded 18-hole parkland course adjacent to Pollok Country Park (the free park that also houses the Burrell Collection museum). Flat, well-maintained fairways with mature trees. Visitor rounds available on selected weekdays. Often considered one of the best inland courses in the West of Scotland.",
+      "green_fee_note": "~£45–60pp weekday visitor round",
+      "distance": "5 miles south of city centre",
+      "website": "pollokgolfclub.co.uk",
+      "location": "90 Barrhead Road, G43 1BG",
+      "lat": 55.8271,
+      "lng": -4.282
+    },
+    {
+      "name": "Linn Park Golf Course",
+      "type": "Parkland — Public (pay and play)",
+      "description": "Glasgow City Council-run 18-hole public course within Linn Park — the city's most accessible golf option. Well-maintained parkland setting with mature trees and the White Cart Water running through. No membership needed; just turn up and book a tee time online. Best value golf near the city. Café on site.",
+      "green_fee_note": "~£15–20pp (public pay-and-play)",
+      "distance": "6 miles southeast of city centre",
+      "website": "glasgow.gov.uk/linnparkgolf",
+      "location": "Simshill Road, G44 5TA",
+      "lat": 55.8085,
+      "lng": -4.247
+    },
+    {
+      "name": "Whitecraigs Golf Club",
+      "type": "Parkland — Private (limited visitor availability)",
+      "description": "Highly regarded private club in the south Glasgow suburb of Giffnock, founded 1905. Wooded parkland course with a friendly atmosphere. Visitor rounds occasionally available through the secretary — worth enquiring for weekdays in August.",
+      "green_fee_note": "~£50–65pp if visitor access arranged",
+      "distance": "8 miles south of city centre",
+      "website": "whitecraigsgolfclub.co.uk",
+      "location": "72 Ayr Road, Giffnock, G46 6SW",
+      "lat": 55.7998,
+      "lng": -4.295
+    },
+    {
+      "name": "Douglas Park Golf Club",
+      "type": "Parkland — Private (visitor tee times available)",
+      "description": "Founded 1897. Scenic 18-hole parkland course in Milngavie on the northern edge of Glasgow, with views toward the Campsie Fells. 30 minutes by rail from Glasgow Queen Street (Milngavie line) or 20-min drive. Visitor rounds available on weekdays — one of the more accessible private clubs in the area.",
+      "green_fee_note": "~£35–50pp weekday visitor round",
+      "distance": "10 miles north (Milngavie)",
+      "website": "douglasparkgolfclub.co.uk",
+      "location": "Milngavie, G62 6HJ",
+      "lat": 55.9366,
+      "lng": -4.3148
+    },
+    {
+      "name": "Loch Lomond Golf Club",
+      "type": "Heathland/Lochside — Private (member/guest only)",
+      "description": "One of the finest golf courses in the world. Designed by Tom Weiskopf and Jay Morrish, opened 1994. Set on the banks of Loch Lomond with the Highlands as backdrop — the views alone are worth the 28-mile drive north. Host of the Scottish Open for over 20 years. Strictly private members' club (no pay-and-play), but worth knowing about if someone in the group has a connection. The drive up Loch Lomond side is stunning regardless.",
+      "green_fee_note": "Private members only — no visitor access without member invitation",
+      "distance": "28 miles north (by Loch Lomond)",
+      "website": "lochlomond.com",
+      "location": "Luss, by Loch Lomond, G83 8NT",
+      "lat": 56.071,
+      "lng": -4.633
+    }
+  ],
+
   "logistics": {
     "getting_there": "Fly into Edinburgh (EDI) — bus or train to Glasgow takes ~50 min, ~£15. Or Glasgow International (GLA) — 20 min taxi/bus to West End.",
     "getting_around": "West End is very walkable. Cathedral/East End is 20–25 min walk or £8 cab. Glasgow has a simple subway (the 'Clockwork Orange') — Hillhead station is in the West End.",
