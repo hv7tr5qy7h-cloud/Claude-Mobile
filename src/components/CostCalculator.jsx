@@ -1,7 +1,5 @@
 import { useState } from 'react'
 
-// For Hotel / Boutique hotel types, the nightly_rate_gbp is per room —
-// two couples need 2 rooms, so we double it for the total.
 const PER_ROOM_TYPES = ['Hotel', 'Boutique hotel']
 
 export default function CostCalculator({ hotels }) {
@@ -36,14 +34,10 @@ export default function CostCalculator({ hotels }) {
                          text-gray-900 font-medium bg-white appearance-none pr-8"
             >
               {hotels.map((h, i) => (
-                <option key={h.name} value={i}>
-                  {h.name}
-                </option>
+                <option key={h.name} value={i}>{h.name}</option>
               ))}
             </select>
-            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs">
-              ▾
-            </span>
+            <span className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none text-xs">▾</span>
           </div>
           {isPerRoom && (
             <p className="text-blue-300 text-xs mt-1.5">
@@ -62,9 +56,7 @@ export default function CostCalculator({ hotels }) {
               onClick={() => setNights(n => Math.max(1, n - 1))}
               className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center
                          text-white text-2xl font-light active:bg-white/30 transition-colors select-none"
-            >
-              −
-            </button>
+            >−</button>
             <span className="text-4xl font-bold text-white tabular-nums w-10 text-center">
               {nights}
             </span>
@@ -72,37 +64,34 @@ export default function CostCalculator({ hotels }) {
               onClick={() => setNights(n => n + 1)}
               className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center
                          text-white text-2xl font-light active:bg-white/30 transition-colors select-none"
-            >
-              +
-            </button>
-            <span className="text-blue-200 text-sm">
-              night{nights !== 1 ? 's' : ''}
-            </span>
+            >+</button>
+            <span className="text-blue-200 text-sm">night{nights !== 1 ? 's' : ''}</span>
           </div>
         </div>
 
-        {/* Results */}
-        <div className="bg-white/15 backdrop-blur rounded-xl p-3.5 space-y-2.5">
-          <div className="flex items-center justify-between">
-            <span className="text-blue-100 text-sm">Total stay</span>
-            <span className="text-white text-2xl font-bold">
-              £{grandTotal.toLocaleString()}
-            </span>
+        {/* Results — per couple is the hero number */}
+        <div className="bg-white/15 backdrop-blur rounded-xl p-3.5">
+          {/* Hero: per couple */}
+          <div className="flex items-end justify-between mb-3">
+            <div>
+              <p className="text-blue-200 text-xs font-medium mb-0.5">Per couple ({nights}n)</p>
+              <p className="text-white text-3xl font-bold leading-none">
+                £{perCouple.toLocaleString()}
+              </p>
+            </div>
+            <div className="text-right">
+              <p className="text-blue-300 text-[11px]">per person</p>
+              <p className="text-white/80 text-lg font-semibold">£{perPerson.toLocaleString()}</p>
+            </div>
           </div>
-          <div className="border-t border-white/20" />
-          <div className="flex justify-between items-center">
-            <span className="text-blue-200 text-xs">Per couple ({nights}n)</span>
-            <span className="text-white font-semibold">£{perCouple.toLocaleString()}</span>
+
+          <div className="border-t border-white/20 pt-2.5 flex justify-between items-center">
+            <span className="text-blue-200 text-xs">Group total ({nights}n)</span>
+            <span className="text-white/70 font-medium text-sm">£{grandTotal.toLocaleString()}</span>
           </div>
-          <div className="flex justify-between items-center">
-            <span className="text-blue-200 text-xs">Per person</span>
-            <span className="text-white/80 font-semibold text-sm">
-              £{perPerson.toLocaleString()}
-            </span>
-          </div>
-          <div className="flex justify-between items-center">
-            <span className="text-blue-200 text-xs">Nightly (group total)</span>
-            <span className="text-white/80 text-sm">£{totalNightly}/night</span>
+          <div className="flex justify-between items-center mt-1.5">
+            <span className="text-blue-200 text-xs">Nightly (group)</span>
+            <span className="text-white/70 text-sm">£{totalNightly}/night</span>
           </div>
         </div>
 

@@ -9,6 +9,8 @@
 html, body {
   overscroll-behavior: none;
   -webkit-font-smoothing: antialiased;
+  background-color: #0f172a;
+  color: #f8fafc;
 }
 
 /* Hide scrollbar on filter pill rows */

@@ -21,9 +21,21 @@
       "vibe_tags": ["street art", "bars", "restaurants", "walkable from centre"]
     },
     {
+      "name": "City Centre",
+      "description": "The commercial and civic heart of Glasgow — George Square, Buchanan Street, Central Station. Grid-plan streets packed with options. George Square is undergoing a £20.5m transformation (due to complete August 2026): resurfaced in stone, restored bronze statues returned, more greenery. Princes Square on Buchanan Street is the standout indoor destination — a Victorian-era atrium repurposed as an upscale shopping, dining, and cocktail hub. Gallery of Modern Art (GoMA) is 2 min from Buchanan Street. Easy walk to Merchant City.",
+      "key_streets": ["Buchanan Street", "Sauchiehall Street", "St Vincent Street"],
+      "vibe_tags": ["shopping", "dining", "civic", "architecture", "nightlife", "central"]
+    },
+    {
       "name": "Cathedral Quarter / East End",
       "description": "Glasgow Cathedral and Necropolis. Half-day trip. Combine with Merchant City and WEST Brewery at Glasgow Green.",
       "vibe_tags": ["historic", "free", "views", "architecture"]
+    },
+    {
+      "name": "Finnieston",
+      "description": "Once industrial docklands, now Glasgow's most acclaimed food and drink neighbourhood — and genuinely deserving of the hype. Sits on the north bank of the Clyde, wedged between the West End and city centre: roughly 15-min walk from Kelvingrove, 20-min walk from Buchanan Street. Exhibition Centre rail station sits in the heart of it. Argyle Street is the spine — a dense, walkable strip of award-winning restaurants, craft cocktail bars, and local pubs with almost zero chain presence. Named one of the coolest neighbourhoods in the UK by Time Out (2025). The food scene punches well above the street's size: Crabshakk (Scottish seafood institution), Ox and Finch (Michelin Guide small plates), The Finnieston Bar (60+ gins + sustainable seafood), Gloriosa (Ottolenghi-trained chef, Good Food Guide top 100), Porter & Rye (dry-aged steak), Ben Nevis (proper whisky and traditional pub), and Kelvingrove Cafe for casual pints. The 'Highland Triangle' — Ben Nevis, The Islay Inn, and The Park Bar — is a cluster of traditional pubs a short walk off the main strip. The OVO Hydro arena and SEC Centre sit at the western end: big-name gigs and events, but check dates as it drives crowds. Highly walkable within the strip. Easy taxi or Exhibition Centre train to/from the city centre and West End.",
+      "key_streets": ["Argyle Street (G3)", "Dumbarton Road"],
+      "vibe_tags": ["food", "bars", "gin", "seafood", "trendy", "walkable", "local", "creative", "Michelin-listed"]
     }
   ],
 
@@ -78,6 +90,60 @@
         "location": "Trongate 103, G1 5HD",
         "lat": 55.857,
         "lng": -4.245
+      },
+      {
+        "name": "Gallery of Modern Art (GoMA) + Wellington Statue",
+        "type": "Art gallery / free landmark",
+        "description": "Glasgow's most-visited gallery — and the most photographed statue in Scotland. The neoclassical Royal Exchange building houses four floors of contemporary Scottish and international art, all free. Outside, the Duke of Wellington's bronze equestrian statue (1844, by Carlo Marochetti) is almost always wearing a traffic cone on its head — placed by daring locals, usually late at night, and replaced within hours of removal by the council. The cone has become an unofficial symbol of Glasgow's irreverence. The city rejected a 2013 proposal to raise the plinth to stop it; locals immediately put a cone on the council's head statue in protest. Visit for both the gallery and the photo.",
+        "cost": "Free",
+        "hours": "Mon–Wed & Sat 10am–5pm, Thu 10am–8pm, Fri & Sun 11am–5pm",
+        "website": "glasgowlife.org.uk/museums/venues/gallery-of-modern-art-goma",
+        "location": "Royal Exchange Square, G1 3AH",
+        "lat": 55.8607,
+        "lng": -4.2516
+      },
+      {
+        "name": "Princes Square",
+        "type": "Shopping / food & drink / architecture",
+        "description": "A Victorian-era courtyard building on Buchanan Street transformed into a multi-level upscale shopping, dining, and cocktail destination. The iron-and-glass atrium interior is genuinely stunning — one of the most beautiful interiors in Glasgow. Home to independent boutiques, a well-curated restaurant and bar collection (breakfast through cocktails), and an Everyman Cinema where you can order wine and pizza to your seat. Not a generic mall — worth a visit for the architecture alone. On Glasgow's main pedestrian shopping street.",
+        "cost": "Free to enter. Food/drink ~£15–40pp",
+        "hours": "Mon–Fri 10am–7pm, Sat 9am–6pm, Sun 11am–5pm (restaurants may vary)",
+        "website": "princessquare.co.uk",
+        "location": "40–48 Buchanan Street, G1 3JX",
+        "lat": 55.8581,
+        "lng": -4.2519
+      },
+      {
+        "name": "George Square",
+        "type": "Civic square / architecture",
+        "description": "Glasgow's principal civic square, flanked by the magnificent City Chambers (1889) — a Victorian baroque wedding cake of a building with a gilded dome. The square is completing a £20.5m redevelopment in August 2026: new stone surface, restored 11 bronze statues (Burns, Watt, Scott, Peel, and more), more greenery and seating. If visiting early August, check whether the works are fully open. Even mid-works, the City Chambers facade is worth seeing — free guided tours of the marble interior available on weekdays. Adjacent to Glasgow Queen Street station.",
+        "cost": "Free",
+        "hours": "Open 24hrs (City Chambers tours: Mon–Fri, free, check glasgowlife.org.uk)",
+        "location": "George Square, G2 1DU",
+        "lat": 55.861,
+        "lng": -4.2502,
+        "note": "Redevelopment completing August 2026 — some disruption possible in early August"
+      },
+      {
+        "name": "Barrowlands (Exterior + Gig Venue)",
+        "type": "Music venue / East End landmark",
+        "description": "One of the greatest live music venues in the world — consistently voted the best in the UK. The neon starburst sign above the Gallowgate entrance is a genuine Glasgow icon and worth seeing even if you don't catch a show. Originally opened in 1934 as a ballroom, rebuilt after a 1958 fire, and now a 1,900-capacity venue known for extraordinary acoustics and a famous sprung dance floor. Acts from Radiohead to Oasis to Wet Leg have called it a career highlight. Check listings — an August show here would be a trip highlight. Exterior photo op anytime. Combine with The Barras market (Sat–Sun) and a pint at Saint Luke's or The Winged Ox nearby.",
+        "cost": "Exterior: free. Gig tickets vary — typically £15–40pp",
+        "hours": "Exterior: anytime. Gigs: check barrowland.co.uk for August listings",
+        "website": "barrowland.co.uk",
+        "location": "244 Gallowgate, G4 0TT",
+        "lat": 55.854,
+        "lng": -4.234
+      },
+      {
+        "name": "Finnieston Argyle Street Strip",
+        "type": "Food & drink neighbourhood / walking",
+        "description": "The most concentrated strip of great eating and drinking in Glasgow — all within a 10-minute walk on one street. Named coolest neighbourhood in the UK by Time Out (2025). Key stops: Crabshakk (book ahead — Scottish seafood institution), Ox and Finch (Michelin Guide, sharing plates, walk-ins possible at the bar), The Finnieston Bar (60+ gins, sustainable Scottish seafood), Gloriosa (Ottolenghi-trained chef, Mediterranean small plates), Porter & Rye (dry-aged steak, great cocktails), Kelvingrove Cafe (casual pints + food), Derby Lane (cocktails + comfort food). Finish at Ben Nevis for whisky. Pairs perfectly with Kelvingrove gallery visit next door.",
+        "cost": "Drinks: £5–8pp. Dinner: £25–55pp depending on venue",
+        "hours": "Most venues open from noon, best from 5pm",
+        "location": "Argyle Street, Finnieston, G3",
+        "lat": 55.8643,
+        "lng": -4.2878
       }
     ],
     "traditional_tourist": [
@@ -183,6 +249,82 @@
         "lat": 55.872,
         "lng": -4.292,
         "booking_tip": "Filter: 2 bedrooms, 4 guests, G12. Book ASAP — August fills up fast due to Edinburgh Fringe overflow."
+      }
+    ]
+  },
+
+  "accommodation_city_centre": {
+    "area_note": "City Centre / Merchant City / Finnieston — G1–G3 postcodes. Good option if you want to be closer to nightlife and the Finnieston food strip. Less 'neighbourhood feel' than West End but more central. 15-20 min walk or £8 cab to West End pubs.",
+    "options": [
+      {
+        "name": "Kimpton Blythswood Square Hotel & Spa",
+        "type": "Luxury hotel / spa",
+        "stars": 5,
+        "description": "Glasgow's most prestigious hotel — a converted Georgian townhouse (1823) on a leafy private square, eight blocks west of George Square. The only hotel in the city with AA five-star accreditation. 93 individually designed rooms and suites. The Spa at Blythswood Square is a genuine selling point: pool, hot tub, sauna, steam room, couples' treatment rooms. On-site restaurant iasg (Scottish seafood) is excellent. Staff are consistently praised. The splurge option for city-centre stays — comparable to One Devonshire Gardens but more central. Under Kimpton/IHG since 2019, which means IHG loyalty points.",
+        "nightly_rate_gbp": 220,
+        "rate_note": "~£180–280+/night per room in August (peak). Two rooms = ~£360–560/night total. Book direct via IHG or kimptonblythswoodsquare.com for best rate and IHG One Rewards perks.",
+        "best_for": "Splurge — couples who want a spa, iconic architecture, and the best address in city centre",
+        "location": "11 Blythswood Square, G2 4AD",
+        "website": "kimptonblythswoodsquare.com",
+        "lat": 55.8638,
+        "lng": -4.2648,
+        "booking_tip": "Book direct via kimptonblythswoodsquare.com or IHG app for potential room upgrades and free minibar. August is peak — book well in advance. Spa access may require advance booking."
+      },
+      {
+        "name": "Grasshoppers Hotel",
+        "type": "Boutique hotel",
+        "stars": 3,
+        "description": "A genuine hidden gem and one of Glasgow's most characterful small hotels. Occupies the entire 6th floor of the Edwardian Caledonian Chambers (1905, by James Millar) — a handsome stone commercial building directly above Central Station. 30 rooms with Scandinavian-influenced decor, complimentary cupcakes on arrival, excellent showers, and exceptionally attentive service that punches far above the 3-star classification. Rooms are compact (city-centre small) but smartly designed. The location is unbeatable for late-night convenience — you're effectively sleeping above the train station. Strong TripAdvisor reputation; frequent 'best kept secret' mentions. Book direct.",
+        "nightly_rate_gbp": 110,
+        "rate_note": "~£90–130/night per room in August. Two rooms = ~£180–260/night total. Excellent value for the location.",
+        "best_for": "Best value city-centre boutique — intimate, great service, great location, no frills excess",
+        "location": "87 Union Street (6th Floor, Caledonian Chambers), G1 3TA",
+        "website": "grasshoppersglasgow.com",
+        "lat": 55.8591,
+        "lng": -4.2566,
+        "booking_tip": "Book direct via grasshoppersglasgow.com. Small hotel — fills fast in August. No lift to 6th floor (stairs only), worth knowing if heavy luggage or mobility concerns."
+      },
+      {
+        "name": "citizenM Glasgow",
+        "type": "Design hotel",
+        "stars": 4,
+        "description": "Tech-forward design hotel aimed squarely at the 25-35 demographic. 188 rooms — all identical, all small (14m²) but immaculately designed around an XL king bed, wall-to-wall window, powerful shower, and an iPad that controls everything (blinds, lighting, temperature, TV). The shared spaces are where citizenM earns its reputation: a buzzing designer lobby with a 24-hour canteen (good coffee, snacks, cocktails), art gallery, and an atmosphere that's more common room than hotel lobby. Free fast Wi-Fi, no hidden fees. Rooms are genuinely small — not for people who want to spread out, but ideal if you're using the hotel to sleep and socialise. Strong value proposition: 4-star comfort at a mid-range price. Corner of Hope Street and Renfrew Street, near Sauchiehall Street.",
+        "nightly_rate_gbp": 100,
+        "rate_note": "~£80–130/night per room in August (rates dynamic — book early for best price). Two rooms = ~£160–260/night total.",
+        "best_for": "Style-conscious travellers who want design, tech, and a social lobby without the luxury hotel price",
+        "location": "60 Renfrew Street, G2 3BW",
+        "website": "citizenm.com/hotels/europe/glasgow/glasgow-hotel",
+        "lat": 55.8644,
+        "lng": -4.2614,
+        "booking_tip": "Book direct on citizenM.com — rates are dynamic and early booking gets best price. Cancellation policy is flexible if booked direct. No breakfast included but canteen is open 24hrs."
+      },
+      {
+        "name": "Radisson RED Glasgow",
+        "type": "Lifestyle hotel",
+        "stars": 4,
+        "description": "Glasgow's most striking hotel for the 'eat, drink, explore' crowd. 174 art-filled rooms on Finnieston Quay, right on the Clyde — some rooms overlook the river, the Squinty Bridge, and the Finnieston Crane. The RED Sky Bar (rooftop) is ranked in the world's top 50 rooftop bars: panoramic views over the Clyde, cocktails, weekend DJs. The ground-floor OUI Bar + KTCHN is open all day with craft beer, food, and a pool table. Pet-friendly (dogs and cats welcome), games studio, 24hr fitness room, and 76 parking spaces — useful for a car trip. Closest hotel to OVO Hydro (15-min walk) and the Finnieston food strip (on the doorstep). Slightly removed from Buchanan Street (20-min walk) but the Finnieston location more than compensates for this group's vibe.",
+        "nightly_rate_gbp": 130,
+        "rate_note": "~£100–160/night per room in August. Two rooms = ~£200–320/night total. Rate spikes on OVO Hydro event nights.",
+        "best_for": "Best hotel for the Finnieston food strip + rooftop bar — the most 'on-brand' choice for eat/drink/explore",
+        "location": "25 Tunnel Street, Finnieston Quay, G3 8HL",
+        "website": "radissonhotels.com/en-us/hotels/radisson-red-glasgow",
+        "lat": 55.861,
+        "lng": -4.287,
+        "booking_tip": "Book direct via Radisson Hotels app or website for best rate. Check OVO Hydro event calendar — rates spike on concert nights. Request a river-view room. SKY Bar entry is free for hotel guests."
+      },
+      {
+        "name": "House of Gods",
+        "type": "Boutique luxury hotel",
+        "stars": 5,
+        "description": "The most Instagram-worthy hotel in Glasgow — a maximalist, hedonistic 28-room boutique hotel in the heart of Merchant City. Think four-poster beds, rich fabrics, oak-panelled walls, bespoke cocktail bar in every room, custom-designed sofas, roll-top baths, and a design language best described as 'Victorian opium den meets modern luxury'. The Sacred Garden Rooftop bar and restaurant is a Merchant City hotspot in its own right. Two room categories: Cabin, Classic, or Suite — all dramatic. Not a hotel for neutral tastes; if the aesthetic clicks, it will be the highlight of the trip. MICHELIN Guide listed. Walking distance to GoMA, George Square, and the Merchant City mural trail.",
+        "nightly_rate_gbp": 165,
+        "rate_note": "~£130–250+/night per room depending on type. Two rooms = ~£260–500/night total. Suites significantly more.",
+        "best_for": "Style-led splurge — the most distinctive hotel in Glasgow, perfectly placed in Merchant City",
+        "location": "65 Glassford Street, G1 1UP",
+        "website": "houseofgodshotel.com/glasgow",
+        "lat": 55.8569,
+        "lng": -4.2468,
+        "booking_tip": "Book direct at houseofgodshotel.com. Limited to 28 rooms — sells out quickly in August. Rooftop bar is open to non-guests so worth visiting even if not staying."
       }
     ]
   },
